@@ -1,0 +1,118 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Api-Hexagonal",
+    "dateExported": "2024-01-26T06:08:17.404Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "65db06b2-8c4a-4f17-a086-ec8aa0a43e05",
+            "name": "Alumnos",
+            "containerId": "",
+            "created": "2024-01-26T06:02:46.784Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d6fee6a4-4511-4864-b7cc-dec01000fab9",
+            "name": "Grupos",
+            "containerId": "",
+            "created": "2024-01-26T06:02:51.479Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9e26be29-0742-4f17-92ee-76fb545e5030",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "65db06b2-8c4a-4f17-a086-ec8aa0a43e05",
+            "name": "getAlumnos",
+            "url": "http://localhost:3000/alumnos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-26T06:03:06.632Z",
+            "modified": "2024-01-26T06:03:53.530Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb99626d-b664-4c14-badf-b8c885c80ed5",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "65db06b2-8c4a-4f17-a086-ec8aa0a43e05",
+            "name": "getByIdAlumnos",
+            "url": "http://localhost:3000/alumnos/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-26T06:04:04.292Z",
+            "modified": "2024-01-26T06:04:11.278Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6cbcaca9-0230-4672-97bd-2e367ce5ebe9",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "65db06b2-8c4a-4f17-a086-ec8aa0a43e05",
+            "name": "createAlumno",
+            "url": "http://localhost:3000/alumnos",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-26T06:04:24.677Z",
+            "modified": "2024-01-26T06:05:56.666Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"name\": \"Eduardo\",\n \"firstName\": \"Bautista\",\n \"lastName\": \"Trujillo\",\n \"email\": \"223257@ids.upchiapas.edu.mx\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6d38f1f6-3144-47c8-b787-e7d8caae0c50",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "d6fee6a4-4511-4864-b7cc-dec01000fab9",
+            "name": "getAllGrupos",
+            "url": "http://localhost:3000/grupo",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-26T06:06:11.156Z",
+            "modified": "2024-01-26T06:06:15.148Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cfa3b736-aba8-4963-a1f7-c9c7aa47f071",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "d6fee6a4-4511-4864-b7cc-dec01000fab9",
+            "name": "getByIdGrupos",
+            "url": "http://localhost:3000/grupo/5",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-26T06:06:27.300Z",
+            "modified": "2024-01-26T06:08:11.670Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93b667f4-5840-4a8c-9905-24164c86a801",
+            "colId": "6fd0a6f4-eb7c-405f-9204-ffa86e0775c1",
+            "containerId": "d6fee6a4-4511-4864-b7cc-dec01000fab9",
+            "name": "createGrupo",
+            "url": "http://localhost:3000/grupo",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-26T06:07:25.084Z",
+            "modified": "2024-01-26T06:08:02.414Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"B\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
