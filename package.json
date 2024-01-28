@@ -1,7 +1,8 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsnd --respawn src/server.ts"
+    "start": "tsnd --respawn src/server.ts",
+    "sonar": "sonar-scanner"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,8 @@
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.4",
-    "@types/signale": "^1.4.4"
+    "@types/signale": "^1.4.4",
+    "sonarqube-scanner": "^3.3.0"
   },
   "name": "api-hexagonal",
   "version": "1.0.0",

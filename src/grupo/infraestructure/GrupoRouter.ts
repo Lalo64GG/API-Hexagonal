@@ -1,8 +1,6 @@
 import express from "express"
 
-import { CreateGrupoController } from "./dependecies";
-import { GetAllGrupoController } from "./dependecies";
-import { GetByIdGrupoController } from "./dependecies";
+import { CreateGrupoController,  GetAllGrupoController ,GetByIdGrupoController } from "./dependecies";
 
 export const grupoRouter = express.Router();
 

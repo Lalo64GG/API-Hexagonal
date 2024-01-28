@@ -1,8 +1,6 @@
 import  express  from "express";
 
-import { CreateAlumnoController } from "./dependecies";
-import { GetAllAlumnoController } from "./dependecies";
-import { GetByIdAlumnoController } from "./dependecies";
+import { CreateAlumnoController, GetAllAlumnoController, GetByIdAlumnoController } from "./dependecies";
 
 export const alumnoRouter = express.Router();
 

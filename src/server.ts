@@ -2,10 +2,10 @@ import express from 'express';
 import { Signale } from 'signale';
 
 import { alumnoRouter } from './alumno/infraestructure/AlumnoRouter';
-import { loaderRouter } from './event/LoaderRouter';
 import { grupoRouter } from './grupo/infraestructure/GrupoRouter';
 
 const app = express();
+app.disable("x-powered-by");
 
 const signale = new Signale();
 
