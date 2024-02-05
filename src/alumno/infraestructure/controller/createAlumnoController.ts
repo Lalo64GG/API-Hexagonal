@@ -12,7 +12,8 @@ export class createAlumnoController {
         data.name,
         data.firstName,
         data.lastName,
-        data.email
+        data.email,
+        data.password
       );
 
       if (alumno)
@@ -24,6 +25,7 @@ export class createAlumnoController {
             firstName: alumno?.firstName,
             lastName: alumno?.lastName,
             email: alumno?.email,
+            password: alumno?.password
           },
         });
       else

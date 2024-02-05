@@ -17,7 +17,8 @@ export class MysqlAlumnoRespository implements AlumnoRepository {
                     alumno.name,
                     alumno.firstName,
                     alumno.lastName,
-                    alumno.email
+                    alumno.email,
+                    alumno.password
                 )
             );
         } catch (error) {
@@ -36,7 +37,8 @@ export class MysqlAlumnoRespository implements AlumnoRepository {
                 result[0].name,
                 result[0].firstName,
                 result[0].lastName,
-                result[0].email
+                result[0].email,
+                result[0].password
             );
         } catch(error) {
             return null;
@@ -47,15 +49,16 @@ export class MysqlAlumnoRespository implements AlumnoRepository {
         name: string,
         firstName: string,
         lastName: string,
-        email: string
+        email: string,
+        password: string
     ): Promise<Alumno | null> {
-        const sql = "INSERT INTO alumno (name, firstName, lastName, email) VALUES (?, ?, ?, ?)";
-        const params: any[] = [name, firstName, lastName, email];
+        const sql = "INSERT INTO alumno (name, firstName, lastName, email, password) VALUES (?, ?, ?, ?, ?)";
+        const params: any[] = [name, firstName, lastName, email, password];
         
         try {
         const [result]: any = await query(sql, params);
 
-        return new Alumno(result.insertId, name, firstName, lastName, email);
+        return new Alumno(result.insertId, name, firstName, lastName, email, password);
         } catch (error) {
             return null;
         }

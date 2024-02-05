@@ -47,4 +47,15 @@ export class MysqlGrupoRepository implements GrupoRepository{
             return null;
         }
     }
+
+    async deleteById(id: number): Promise<boolean> {
+        const sql = "DELETE FROM grupo WHERE id =?";
+        const params: any[] = [id]
+        try {
+            const [result]: any = await query(sql,params);
+            return true;
+        } catch (error) {
+            return false;
+        }
+    }
 }

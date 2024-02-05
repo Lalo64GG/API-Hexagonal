@@ -17,7 +17,8 @@ export class getByIdAlumnoController {
                     name: alumno.name,
                     firstName: alumno.firstName,
                     lastName: alumno.lastName,
-                    email: alumno.email
+                    email: alumno.email,
+                    password: alumno.password
                 }
             })
             else 

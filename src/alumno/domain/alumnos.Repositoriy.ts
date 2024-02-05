@@ -7,6 +7,7 @@ export interface AlumnoRepository {
         name: string,
         firstName: string,
         lastName: string,
-        email: string
+        email: string,
+        password: string
     ): Promise<Alumno | null>;
 }

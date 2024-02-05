@@ -5,4 +5,5 @@ export interface GrupoRepository{
     createGrupo(
         name: string
     ) : Promise<Grupo | null>;
+    deleteById(id: number): Promise<boolean | null>;
 }

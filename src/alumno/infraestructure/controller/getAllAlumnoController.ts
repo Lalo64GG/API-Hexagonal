@@ -18,6 +18,7 @@ export class getAllAlumnoController {
               firstName: alumnos.firstName,
               lastName: alumnos.lastName,
               email: alumnos.email,
+              password: alumnos.password,
             };
           }),
         });
